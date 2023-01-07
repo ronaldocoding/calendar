@@ -18,6 +18,7 @@
 }
 
 .form{
+    position: absolute;
     max-width: 430px;
     width: 100%;
     padding: 30px;
@@ -44,7 +45,18 @@ form .field{
     border-radius: 6px;
 }
 
-.eye-icon{
+.password-eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8B8B8B;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.confirm-password-eye-icon{
     position: absolute;
     top: 50%;
     right: 10px;
