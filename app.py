@@ -5,8 +5,8 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-@app.route('/index.html', methods=['GET', 'POST'])
-def index():
+@app.route('/login.html', methods=['GET', 'POST'])
+def login():
     if request.method == 'POST':
         connection = sqlite3.connect('/Users/ronaldocosta/Documents/pessoal/calendar/agenda.db')
         cursor = connection.cursor()
@@ -26,7 +26,7 @@ def index():
             connection.commit()
             return render_template('register.html')
 
-    return render_template('index.html')
+    return render_template('login.html')
 
 
 @app.route('/register.html')
