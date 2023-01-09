@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="agenda.db" uuid="99d711de-d711-4212-b0ec-c989be287b93">
+    <data-source source="LOCAL" name="agenda.db" uuid="67966183-20b3-4365-9c57-b7e5ef907def">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>

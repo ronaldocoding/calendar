@@ -16,19 +16,19 @@
                     <img src="../static/img/calendar.svg" alt="Calendar app icon"/>
                     <h4> Agenda </h4>
                 </header>
-                <form action="#">
+                <form method="POST">
                     <div class="field input-field">
-                        <input type="tel" placeholder="Nome" class="input">
+                        <input type="text" placeholder="Nome" class="input" name="name">
                     </div>
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="email" placeholder="Email" class="input" name="email">
                     </div>
                     <div class="field input-field">
-                        <input type="password" placeholder="Senha" class="password">
+                        <input type="password" placeholder="Senha" class="password" name="password">
                         <i class='bx bx-show password-eye-icon'></i>
                     </div>
                     <div class="field input-field">
-                        <input type="password" placeholder="Confirmar senha" class="confirm-password">
+                        <input type="password" placeholder="Confirmar senha" class="confirm-password" name="confirm-password">
                         <i class='bx bx-show confirm-password-eye-icon'></i>
                     </div>
                     <div class="field button-field">
@@ -36,7 +36,7 @@
                     </div>
                 </form>
                 <div class="form-link">
-                    <span> Já tem conta? <a href="login.html" class="link login-link"> Entrar </a></span>
+                    <span> Já tem conta? <a href="{{ url_for('login') }}" class="link login-link"> Entrar </a></span>
                 </div>
             </div>
         </div>
