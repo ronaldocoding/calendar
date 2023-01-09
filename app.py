@@ -1,6 +1,6 @@
 import sqlite3
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 USER_NOT_LOGGED_STATUS = 1
@@ -21,14 +21,16 @@ def login():
         cursor.execute(query)
 
         results = cursor.fetchall()
+        connection.commit()
 
         if len(results) == 0:
             print('Incorrect credentials provided')
+            connection.close()
         else:
             cursor.execute("UPDATE agenda_usuario SET usuario_status = 2 WHERE usuario_email = '"+user_email+"'")
             connection.commit()
             connection.close()
-            return render_template('home.html')
+            return redirect('home')
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -46,9 +48,11 @@ def register():
         connection.commit()
         connection.close()
 
-        return render_template('login.html')
+        return redirect('login')
+    else:
+        render_template('register.html')
 
 
-@app.route('/home', methods=['GET', 'POST'])
+@app.route('/home')
 def home():
     return render_template('home.html')
