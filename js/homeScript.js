@@ -74,7 +74,35 @@ function initCalendar() {
     const prevDays = prevLastDay.getDate()
     const lastDate = lastDay.getDate()
     const day = firstDay.getDay()
-    const nextDays = 7 - lastDay.getDay() - 1
+    const firstWeekDay = firstDay.getDay()
+    let nextDays
+
+    // Logic to view each month with 6 weeks
+
+    console.log(lastDate)
+
+    if (lastDate == 31) {
+        if (firstWeekDay == 5 || firstWeekDay == 6) {
+            nextDays = 7 - lastDay.getDay() - 1
+        } else {
+            nextDays = 14 - lastDay.getDay() - 1
+        }
+    } else if (lastDate == 30) {
+        if (firstWeekDay == 6) {
+            nextDays = 7 - lastDay.getDay() - 1
+        } else {
+            nextDays = 14 - lastDay.getDay() - 1
+        }
+    } else if(lastDate == 28) {
+        const lastWeekDay = lastDay.getDay()
+        if (lastWeekDay == 6) {
+            nextDays = 21 - lastDay.getDay() - 1 
+        } else {
+            nextDays = 14 - lastDay.getDay() - 1 
+        }
+    } else {
+        nextDays = 14 - lastDay.getDay() - 1 
+    }
 
     // Update the date at the top of the calendar
     date.innerHTML = months[month] + " " + year
