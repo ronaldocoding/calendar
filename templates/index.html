@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agenda </title>
+    <link rel="stylesheet" href="/static/css/indexStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header> 
+                    <img src="/static/img/calendar.svg" alt="Calendar app icon"/>
+                    <h4> Agenda</h4>
+                </header>
+                <form method="POST">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" name="email">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Senha" class="password" name="password">
+                        <i class='bx bx-show eye-icon'></i>
+                    </div>
+                    <div class="field button-field">
+                        <button name="submit"> Entrar </button>
+                    </div>
+                    <div class="form-link">
+                        <a href="#" class="link forgot-password"> Esqueceu a senha? </a>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span> Ainda não tem conta? <a href="register.html" class="link signup-link"> Cadastrar </a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/js/indexScript.js"></script>
+</body>
+</html>
