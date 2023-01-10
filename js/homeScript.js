@@ -5,11 +5,11 @@ const calendar = document.querySelector(".calendar"),
     next = document.querySelector(".next"),
     navBar = document.querySelector("nav"),
     menuBtns = document.querySelectorAll(".menu-icon"),
-    overlay = document.querySelectorAll(".overlay")
+    overlay = document.querySelector(".overlay")
 
-menuBtns.forEach(menuBtn => {
+menuBtns.forEach((menuBtn) => {
     menuBtn.addEventListener("click", () => {
-        navBar.classList.toogle("open")
+        navBar.classList.toggle("open")
     })
 })
 
