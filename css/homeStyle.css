@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --primary-clr: #B38ADD;
+    --primary-clr: #3769D2;
 }
 
 * {
@@ -216,11 +216,11 @@ body {
     }
 
     .calendar .days .day {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .calendar .days .day.active,
     .calendar .days .day.today {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
