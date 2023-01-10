@@ -3,7 +3,7 @@ const calendar = document.querySelector(".calendar"),
     daysContainer = document.querySelector(".days"),
     prev = document.querySelector(".prev"),
     next = document.querySelector(".next"),
-    navBar = document.querySelector("nav"),
+    navBar = document.querySelector(".sidebar"),
     menuBtns = document.querySelectorAll(".menu-icon"),
     overlay = document.querySelector(".overlay")
 

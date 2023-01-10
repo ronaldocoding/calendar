@@ -1,114 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Agenda </title>
-    <link rel="stylesheet" href="css/homeStyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda</title>
+    <link rel="stylesheet" href="css/homeStyle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">Agenda</span>
+      </div>
+      <div class="sidebar">
         <div class="logo">
-            <i class="bx bx-menu menu-icon"></i>
-            <span class="logo-name">Agenda</span>
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Agenda</span>
         </div>
-        <div class="sidebar">
-            <div class="logo">
-            <i class="bx bx-menu menu-icon"></i>
-            <span class="logo-name">Agenda</span>
-            </div>
 
-            <div class="sidebar-content">
-            <ul class="lists">
-                <li class="list">
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
                 <a href="#" class="nav-link">
-                    <i class="bx bx-home-alt icon"></i>
-                    <span class="link">Dashboard</span>
+                  <i class="bx bx-user-circle icon"></i>
+                  <span class="link">Perfil</span>
                 </a>
-                </li>
-                <li class="list">
+            </li>
+            <li class="list">
                 <a href="#" class="nav-link">
-                    <i class="bx bx-bar-chart-alt-2 icon"></i>
-                    <span class="link">Revenue</span>
+                  <i class="bx bx-question-mark icon"></i>
+                  <span class="link">Sobre</span>
                 </a>
-                </li>
-                <li class="list">
+            </li>
+            <li class="list">
                 <a href="#" class="nav-link">
-                    <i class="bx bx-bell icon"></i>
-                    <span class="link">Notifications</span>
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Sair</span>
                 </a>
-                </li>
-                <li class="list">
-                <a href="#" class="nav-link">
-                    <i class="bx bx-message-rounded icon"></i>
-                    <span class="link">Messages</span>
-                </a>
-                </li>
-                <li class="list">
-                <a href="#" class="nav-link">
-                    <i class="bx bx-pie-chart-alt-2 icon"></i>
-                    <span class="link">Analytics</span>
-                </a>
-                </li>
-                <li class="list">
-                <a href="#" class="nav-link">
-                    <i class="bx bx-heart icon"></i>
-                    <span class="link">Likes</span>
-                </a>
-                </li>
-                <li class="list">
-                <a href="#" class="nav-link">
-                    <i class="bx bx-folder-open icon"></i>
-                    <span class="link">Files</span>
-                </a>
-                </li>
-            </ul>
-
-            <div class="bottom-cotent">
-                <li class="list">
-                <a href="#" class="nav-link">
-                    <i class="bx bx-cog icon"></i>
-                    <span class="link">Settings</span>
-                </a>
-                </li>
-                <li class="list">
-                <a href="#" class="nav-link">
-                    <i class="bx bx-log-out icon"></i>
-                    <span class="link">Logout</span>
-                </a>
-                </li>
-            </div>
-            </div>
+            </li>
+          </ul>
         </div>
+      </div>
+    <section class="overlay"></section>
+
     </nav>
     <div class="calendar">
-        <div class="month">
-            <i class="fa fa-angle-left prev"></i>
-            <div class="date">Janeiro 2023</div>
-            <i class="fa fa-angle-right next"></i>
-        </div>
-        <div class="weekdays">
-            <div>D</div>
-            <div>S</div>
-            <div>T</div>
-            <div>Q</div>
-            <div>Q</div>
-            <div>S</div>
-            <div>S</div>
-        </div>
-        <div class="days">
-            <!-- Days are added with js-->
-        </div>
+      <div class="month">
+        <i class="fa fa-angle-left prev"></i>
+        <div class="date">Janeiro 2023</div>
+        <i class="fa fa-angle-right next"></i>
+      </div>
+      <div class="weekdays">
+        <div>D</div>
+        <div>S</div>
+        <div>T</div>
+        <div>Q</div>
+        <div>Q</div>
+        <div>S</div>
+        <div>S</div>
+      </div>
+      <div class="days">
+        <!-- Days are added with js-->
+      </div>
     </div>
     <button class="add-event">
-        <i class="fas fa-plus"></i>
+      <i class="fas fa-plus"></i>
     </button>
-    <section class="overlay"></section>
     <script src="js/homeScript.js"></script>
-</body>
+  </body>
 </html>

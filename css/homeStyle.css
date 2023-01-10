@@ -46,25 +46,33 @@ nav .logo {
     cursor: pointer;
 }
 
+.logo .menu-icon-sidebar {
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
 .logo .logo-name {
     color: #333;
     font-size: 22px;
     font-weight: 500;
 }
 
-nav .sidebar {
-    position: relative;
+.sidebar {
+    position: absolute;
     top: 0;
-    left: -100%;
-    height: 100%;
+    left: -260px;
+    height: 100vh;
     width: 260px;
     padding: 20px 0;
     background-color: #fff;
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
+    z-index: 11;
 }
 
-nav.open .sidebar {
+.sidebar.open {
     left: 0;
 }
 
@@ -83,8 +91,8 @@ nav.open .sidebar {
 .list .nav-link {
     display: flex;
     align-items: center;
-    margin: 8px 0;
-    padding: 14px 12px;
+    margin: 16px 0;
+    padding: 8px 10px;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -95,7 +103,7 @@ nav.open .sidebar {
 
 .nav-link .icon {
     margin-right: 14px;
-    font-size: 20px;
+    font-size: 24px;
     color: #707070;
 }
 
@@ -120,9 +128,10 @@ nav.open .sidebar {
     pointer-events: none;
     transition: all 0.4s ease;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
-nav.open~.overlay {
+.open~.overlay {
     opacity: 1;
     left: 260px;
     pointer-events: auto;
