@@ -2,7 +2,20 @@ const calendar = document.querySelector(".calendar"),
     date = document.querySelector(".date"),
     daysContainer = document.querySelector(".days"),
     prev = document.querySelector(".prev"),
-    next = document.querySelector(".next")
+    next = document.querySelector(".next"),
+    navBar = document.querySelector("nav"),
+    menuBtns = document.querySelectorAll(".menu-icon"),
+    overlay = document.querySelectorAll(".overlay")
+
+menuBtns.forEach(menuBtn => {
+    menuBtn.addEventListener("click", () => {
+        navBar.classList.toogle("open")
+    })
+})
+
+overlay.addEventListener("click", () => {
+    navBar.classList.remove("open")
+})
 
 let today = new Date()
 let activeDay;
