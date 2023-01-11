@@ -6,7 +6,7 @@ app = Flask(__name__)
 USER_NOT_LOGGED_STATUS = 1
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
         return render_template('login.html')
@@ -48,7 +48,7 @@ def register():
         connection.commit()
         connection.close()
 
-        return redirect('login')
+        return redirect('/')
     else:
         render_template('register.html')
 
