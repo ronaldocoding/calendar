@@ -1,10 +1,8 @@
 import sqlite3
-import os
 
 
 def create_database():
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    connection = sqlite3.connect(dir_path + "/agenda.db")
+    connection = sqlite3.connect("/tmp/agenda.db")
     cursor = connection.cursor()
 
     cursor.execute(
