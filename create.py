@@ -2,7 +2,7 @@ import sqlite3
 
 NOT_LOGGED_STATUS = 1
 
-connection = sqlite3.connect('/Users/ronaldocosta/Documents/pessoal/calendar/agenda.db')
+connection = sqlite3.connect('./agenda.db')
 cursor = connection.cursor()
 
 cursor.execute(
