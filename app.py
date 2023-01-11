@@ -40,7 +40,7 @@ def register():
     if request.method == 'GET':
         return render_template('register.html')
     elif request.method == 'POST':
-        connection = sqlite3.connect('/Users/ronaldocosta/Documents/pessoal/calendar/agenda.db')
+        connection = sqlite3.connect('./agenda.db')
         cursor = connection.cursor()
 
         query = "INSERT INTO agenda_usuario (usuario_nome, usuario_email, usuario_senha, usuario_status) VALUES( ?, ?, ?, ?)"
