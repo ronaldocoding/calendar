@@ -1,4 +1,5 @@
 import sqlite3
+import os
 from create import create_database
 from flask import Flask, render_template, request, redirect
 
@@ -13,7 +14,8 @@ def login():
     if request.method == 'GET':
         return render_template('login.html')
     elif request.method == 'POST':
-        connection = sqlite3.connect('/Users/ronaldocosta/Documents/pessoal/calendar/agenda.db')
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        connection = sqlite3.connect(dir_path + "/agenda.db")
         cursor = connection.cursor()
 
         user_email = request.form['email']
@@ -40,7 +42,8 @@ def register():
     if request.method == 'GET':
         return render_template('register.html')
     elif request.method == 'POST':
-        connection = sqlite3.connect('./agenda.db')
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        connection = sqlite3.connect(dir_path + "/agenda.db")
         cursor = connection.cursor()
 
         query = "INSERT INTO agenda_usuario (usuario_nome, usuario_email, usuario_senha, usuario_status) VALUES( ?, ?, ?, ?)"
