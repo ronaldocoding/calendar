@@ -1,6 +1,8 @@
 import sqlite3
-
+from create import create_database
 from flask import Flask, render_template, request, redirect
+
+create_database()
 
 app = Flask(__name__)
 USER_NOT_LOGGED_STATUS = 1
