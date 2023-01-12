@@ -29,8 +29,9 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    background: #fff;
+    background: var(--primary-clr);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
 }
 
 nav .logo {
@@ -40,10 +41,16 @@ nav .logo {
 }
 
 .logo .menu-icon {
-    color: #333;
+    color: #FFF;
     font-size: 24px;
     margin-right: 14px;
     cursor: pointer;
+}
+
+.logo .logo-name {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .logo .menu-icon-sidebar {
@@ -53,7 +60,7 @@ nav .logo {
     cursor: pointer;
 }
 
-.logo .logo-name {
+.logo .logo-name-sidebar {
     color: #333;
     font-size: 22px;
     font-weight: 500;
@@ -66,6 +73,7 @@ nav .logo {
     height: 100vh;
     width: 260px;
     padding: 20px 0;
+    box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
@@ -103,12 +111,24 @@ nav .logo {
 
 .nav-link .icon {
     margin-right: 14px;
-    font-size: 24px;
+    font-size: 28px;
     color: #707070;
 }
 
+nav .navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav .icon {
+    margin-right: 22px;
+    font-size: 28px;
+    color: #FFF;   
+}
+
 .nav-link .link {
-    font-size: 16px;
+    font-size: 18px;
     color: #707070;
     font-weight: 400;
 }
@@ -177,7 +197,7 @@ nav .logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 14px;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -195,11 +215,11 @@ nav .logo {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 14px;
     justify-content: space-between;
-    padding: 0 20px;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .calendar .days .day {
@@ -275,8 +295,8 @@ nav .logo {
 
 .add-event {
     position: absolute;
-    bottom: 12%;
-    right: 10%;
+    bottom: 10%;
+    right: 9%;
     width: 56px;
     height: 56px;
     display: flex;

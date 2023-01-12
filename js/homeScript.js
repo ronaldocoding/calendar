@@ -4,13 +4,16 @@ const calendar = document.querySelector(".calendar"),
     prev = document.querySelector(".prev"),
     next = document.querySelector(".next"),
     navBar = document.querySelector(".sidebar"),
-    menuBtns = document.querySelectorAll(".menu-icon"),
+    menuIcon = document.querySelector(".menu-icon"),
+    menuIconSidebar = document.querySelector(".menu-icon-sidebar")
     overlay = document.querySelector(".overlay")
 
-menuBtns.forEach((menuBtn) => {
-    menuBtn.addEventListener("click", () => {
+menuIcon.addEventListener("click", () => {
         navBar.classList.toggle("open")
-    })
+})
+
+menuIconSidebar.addEventListener("click", () => {
+    navBar.classList.toggle("open")
 })
 
 overlay.addEventListener("click", () => {
@@ -91,9 +94,6 @@ function initCalendar() {
     let nextDays
 
     // Logic to view each month with 6 weeks
-
-    console.log(lastDate)
-
     if (lastDate == 31) {
         if (firstWeekDay == 5 || firstWeekDay == 6) {
             nextDays = 7 - lastDay.getDay() - 1
