@@ -2,7 +2,7 @@ import sqlite3
 
 
 def create_database():
-    connection = sqlite3.connect("/tmp/agenda.db")
+    connection = sqlite3.connect("./agenda.db")
     cursor = connection.cursor()
 
     cursor.execute(
