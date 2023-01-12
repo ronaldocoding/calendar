@@ -10,8 +10,8 @@ def login():
     if request.method == 'GET':
         return render_template('login.html')
     elif request.method == 'POST':
-        if authenticate_user(email=request.form['email'], 
-        password=request.form['password']):
+        if authenticate_user(email=request.form['email'],
+                             password=request.form['password']):
             return redirect('home')
         else:
             return redirect('/')

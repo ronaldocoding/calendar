@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e813804-8033-454a-a734-4de4f0970fa1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67966183-20b3-4365-9c57-b7e5ef907def.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/res/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +58,7 @@
       <workItem from="1673290832868" duration="424000" />
       <workItem from="1673291260421" duration="2568000" />
       <workItem from="1673500121702" duration="1173000" />
-      <workItem from="1673510293468" duration="671000" />
+      <workItem from="1673510293468" duration="1538000" />
     </task>
     <servers />
   </component>
