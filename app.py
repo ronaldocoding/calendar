@@ -1,5 +1,5 @@
 import sqlite3
-from create import create_database
+from templates.create import create_database
 from flask import Flask, render_template, request, redirect
 
 create_database()
